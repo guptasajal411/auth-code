@@ -7,8 +7,10 @@
     <title>Auth Code</title>
 </head>
 <body>
-    <h1>Welcome to Auth Code!</h1>
-    <a href="/registration">Register for Auth Code</a><br>
-    <a href="/login">Login to Auth Code</a>
+    <h1>Login for Auth Code!</h1>
+    <form action="/login" method="POST">
+        <input placeholder="Enter email" name="email" type="email" required>
+        <button type="submit">Send OTP & QR Code</button>
+    </form>
 </body>
 </html>

@@ -14,4 +14,9 @@ app
     .get(pageController.getRegistration)
     .post(authController.postRegistration);
 
+app
+    .route("/login")
+    .get(pageController.getLogin)
+    .post(authController.postLogin);
+
 module.exports = app;
