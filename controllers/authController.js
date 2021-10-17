@@ -17,6 +17,15 @@ exports.postRegistration = function (req, res) {
 }
 
 exports.postLogin = function (req, res) {
-    console.log(req.body);
-    res.send(`Logged in to Auth Code. Go to <a href="/">homepage</a>`);
+    User.findOne({ email: req.body.email }, async function (err, foundUser) {
+        if (err){
+            res.send(err);
+        } else {
+            if (foundUser){
+                res.json(foundUser);
+            } else {
+                res.send(`user not found. <a href="/register">register</a> before logging in`);
+            }
+        }
+    });
 }
