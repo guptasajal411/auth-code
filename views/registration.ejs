@@ -10,7 +10,13 @@
     <h1>Register for Auth Code!</h1>
     <form action="/registration" method="POST">
         <input placeholder="Enter email" name="email" type="email" required>
+        <input placeholder="Enter colour combination" name="colourCombination" type="text" id="colourCombination" required maxlength="4">
+        <button type="button" id="r">r</button>
+        <button type="button" id="g">g</button>
+        <button type="button" id="b">b</button>
+        <button type="button" id="y">y</button>
         <button type="submit">Submit</button>
     </form>
+    <script src="/js/registration.js"></script>
 </body>
 </html>
