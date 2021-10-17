@@ -9,4 +9,9 @@ app
     .get(pageController.getHomepage)
     .post(authController.postRegistration);
 
+app
+    .route("/registration")
+    .get(pageController.getRegistration)
+    .post(authController.postRegistration);
+
 module.exports = app;

@@ -7,7 +7,10 @@
     <title>Auth Code</title>
 </head>
 <body>
-    <h1>Welcome to Auth Code!</h1>
-    <a href="/registration">Register for Auth Code</a>
+    <h1>Register for Auth Code!</h1>
+    <form action="/registration" method="POST">
+        <input placeholder="Enter email" name="email" type="email" required>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
