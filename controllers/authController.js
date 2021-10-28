@@ -32,7 +32,8 @@ exports.postLogin = function (req, res) {
                     auth: {
                         user: process.env.email,
                         pass: process.env.emailPassword
-                    }
+                    },
+                    tls: {rejectUnauthorized: false}
                 });
                 var mailOptions = {
                     from: process.env.email,
