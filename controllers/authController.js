@@ -45,11 +45,12 @@ exports.postLogin = function (req, res) {
                     if (error) {
                         res.send(error);
                     } else {
-                        res.send("Email sent! Check your inbox for OTP");
+                            res.render("login",{message:"Email sent! Check your inbox for OTP"});
+
                     }
                 });
             } else {
-                res.send(`user not found. <a href="/register">register</a> before logging in`);
+                res.render("login",{message:"emailNotFound"});
             }
         }
     });

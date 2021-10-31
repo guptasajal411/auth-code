@@ -7,5 +7,5 @@ exports.getRegistration = function(req, res){
 }
 
 exports.getLogin = function(req, res){
-    res.render("login");
+    res.render("login",{message:"&nbsp;"});
 }

@@ -1,0 +1,43 @@
+#optmsg{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 9%;
+    margin-bottom: 4%;
+}
+#gtick{
+    height: 50%;
+    width:50%;
+    margin-left: 25%;
+    padding-top: 3%;
+}
+#notf{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15%;
+    font-size: 125%;
+}
+#tryreg{
+  font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+     color: royalblue;
+  font-weight: 800;
+  // text-decoration: none;
+  overflow: hidden;
+  transition: clip-path 275ms ease;
+  &:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  &::before {
+    position: absolute;
+    content: attr(data-content);
+    color: midnightblue;
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;
+  }
+}
+    
+}
+#gcross{
+    height: 25%;
+    width: 25%;
+}
