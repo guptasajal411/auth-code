@@ -41,7 +41,7 @@
 <% if (message!=="&nbsp;" && message!=="emailNotFound"){ %>
     <div id="optmsg"><%= message %><br /><img id="gtick" src="/img/download.png"></div>
    <% } else if(message=="emailNotFound") { %>
-<div>User not found. <a href="/registration">Try Registering</a> before logging again. </div>
+<div id="notf">User not found. <a id="tryreg" data-content="Link Hover" class=tryreg href="/registration">Try Registering.</a><br /></div>
 <% } else { %>
 <form action="/login" method="POST" class="login100-form validate-form">
 					<span class="login100-form-title">

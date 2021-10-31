@@ -1,0 +1,228 @@
+#r{
+    height: 15px;
+    background-color: red;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h45 {
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #111;
+    
+}
+h455 {
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #111;
+}
+h456 {
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #111;
+}
+h457 {
+
+  
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #111;
+}
+.container {
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+  
+  position: relative;
+}
+
+.block {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px;
+}
+
+.btn {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  position: relative;
+  
+  margin: 0 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.btn5 {
+    z-index:0;
+  overflow: hidden;
+  transition: all 300ms ease;
+    border: 2px solid #e82413!important;
+}
+
+.btn5 h45 {
+  color: red;
+}
+
+.btn5:after {
+  width: 400%;
+  height: 300%;
+  left: -300%;
+    z-index: -3;
+  transform: rotate(45deg);
+  background-color: #e82413;
+  transition: all 300ms ease;
+}
+
+.btn5:hover h45  {
+  color:white !important;
+  z-index: 10;
+  
+}
+
+.btn5:hover::after {
+  left: -100%;
+}
+
+.btn5:hover {
+  border: 2px solid #e82413;
+}
+    
+
+
+
+.btn56 {
+    z-index:0;
+  overflow: hidden;
+  transition: all 300ms ease;
+    border: 2px solid #3E7C17!important;
+}
+
+.btn56 h45 {
+  color: #3E7C17;
+}
+
+.btn56:after {
+  width: 420%;
+  height: 300%;
+  left: -300%;
+    z-index: -3;
+  transform: rotate(45deg);
+  background-color: #3E7C17;
+  transition: all 300ms ease;
+}
+
+.btn56:hover h45  {
+  color:white !important;
+  z-index: 10;
+  
+}
+
+.btn56:hover::after {
+  left: -100%;
+}
+
+.btn56:hover {
+  border: 2px solid #3E7C17;
+}
+
+
+
+
+.btn55 {
+    z-index:0;
+  overflow: hidden;
+  transition: all 300ms ease;
+    border: 2px solid #2F86A6!important;
+}
+
+.btn55 h45 {
+  color: #2F86A6;
+}
+
+.btn55:after {
+  width: 400%;
+  height: 300%;
+  left: -300%;
+    z-index: -3;
+  transform: rotate(45deg);
+  background-color: #2F86A6;
+  transition: all 300ms ease;
+}
+
+.btn55:hover h45  {
+  color:white !important;
+  z-index: 10;
+  
+}
+
+.btn55:hover::after {
+  left: -100%;
+}
+
+.btn55:hover {
+  border: 2px solid #2F86A6;
+}
+
+
+
+.btn57 {
+    z-index:0;
+  overflow: hidden;
+  transition: all 300ms ease;
+    border: 2px solid #FEC260!important;
+    
+}
+
+.btn57 h457 {
+  color: #FEC260 ;
+}
+
+.btn57:after {
+  width: 400%;
+  height: 300%;
+  left: -300%;
+    z-index: -3;
+  transform: rotate(45deg);
+  background-color: #FEC260;
+  transition: all 300ms ease;
+}
+
+.btn57:hover h457  {
+  color:white !important;
+  z-index: 10;
+  
+}
+
+.btn57:hover::after {
+  left: -100%;
+}
+
+.btn57:hover {
+  border: 2px solid #FEC260;
+}
