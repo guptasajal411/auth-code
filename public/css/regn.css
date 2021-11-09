@@ -1,7 +1,4 @@
-#r{
-    height: 15px;
-    background-color: red;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -125,6 +122,7 @@ h457 {
 
 .btn56 h45 {
   color: #3E7C17;
+ padding-top: 1%;
 }
 
 .btn56:after {
@@ -161,7 +159,7 @@ h457 {
     border: 2px solid #2F86A6!important;
 }
 
-.btn55 h45 {
+.btn55 h456 {
   color: #2F86A6;
 }
 
@@ -175,7 +173,7 @@ h457 {
   transition: all 300ms ease;
 }
 
-.btn55:hover h45  {
+.btn55:hover h456  {
   color:white !important;
   z-index: 10;
   
@@ -195,12 +193,12 @@ h457 {
     z-index:0;
   overflow: hidden;
   transition: all 300ms ease;
-    border: 2px solid #FEC260!important;
+    border: 2px solid #F6BE00!important;
     
 }
 
 .btn57 h457 {
-  color: #FEC260 ;
+  color: #F6BE00 ;
 }
 
 .btn57:after {
@@ -209,7 +207,7 @@ h457 {
   left: -300%;
     z-index: -3;
   transform: rotate(45deg);
-  background-color: #FEC260;
+  background-color: #F6BE00;
   transition: all 300ms ease;
 }
 
@@ -224,5 +222,5 @@ h457 {
 }
 
 .btn57:hover {
-  border: 2px solid #FEC260;
+  border: 2px solid #F6BE00;
 }
