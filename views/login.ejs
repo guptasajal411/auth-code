@@ -39,7 +39,24 @@
 					<img id="main-gif" src="/img/logo1.gif" alt="IMG">
 				</div>
 <% if (message!=="&nbsp;" && message!=="emailNotFound"){ %>
-    <div id="optmsg"><%= message %><br /><img id="gtick" src="/img/download.png"></div>
+    <div id="optmsg"><%= message %>
+    <br />
+    <img id="gtick" src="/img/download.png">
+    <br />
+    <div class="wrap-input100 validate-input" data-validate = "Valid OTP is required. Check your mail again.">
+						<input class="input100" placeholder="Enter OTP" name="OTP" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-key" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">
+				            Verify OTP
+						</button>
+					</div>
+
+    </div>
    <% } else if(message=="emailNotFound") { %>
 <div id="notf">User not found. <a id="tryreg" data-content="Link Hover" class=tryreg href="/registration">Try Registering.</a><br /></div>
 <% } else { %>
