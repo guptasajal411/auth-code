@@ -1,92 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>AUTH-CODE</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/css/util.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-<!--===============================================================================================-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Auth Code</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/homepage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/homepage/css/fontawesome.css">
+    <link rel="stylesheet" href="/homepage/css/styles.css">
+    <link rel="stylesheet" href="/homepage/css/animated.css">
+    <link rel="stylesheet" href="/homepage/css/owl.css">
+
 </head>
+
 <body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-			
-				<div class="login100-pic js-tilt" data-tilt>
-				<a href="https://www.fontspace.com/category/sans-serif"><img src="https://see.fontimg.com/api/renderfont4/JReLK/eyJyIjoiZnMiLCJoIjo1MSwidyI6MTI1MCwiZnMiOjQxLCJmZ2MiOiIjMTExMTExIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/QVVUSC1DT0RF/multiple-ranges-regular.png" alt="Sans Serif fonts"></a>
-					<img id="main-gif" src="/img/logo1.gif" alt="IMG">
-				</div>
 
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Member Login
-					</span>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
 
-					
-					
-					
-						<a href="/login">
-                         <button type="button" class="login100-form-btn">
-                          Login
-                         </button>
-                          </a>
-					
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="/homepage/images/logo-v1.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#services">Features</a></li>
+                            <li class="scroll-to-section">
+                                <div class="border-first-button"><a href="#contact">Get Started</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-					
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h6>Welcome to AuthCode </h6>
+                                        <h2>We innovate <br> to improve your Login experience</h2>
+                                        <p>This project focuses on building an e-Authentication system and creatively improving user's login experience. Using Tokens and OTP technologies.</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="border-first-button scroll-to-section">
+                                            <a href="#contact">Register</a>
+                                            <a href="#contact" style="margin: 1rem;">login</a>
+                                        </div>
 
-					<div class="text-center p-t-136">
-						<a class="txt2" href="/registration">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	
 
-	
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="/homepage/images/slider-dec.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="/homepage/images/about-dec.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="about-right-content">
+                                <div class="section-heading">
+                                    <h6>About Us</h6>
+                                    <h4>What is <em>AUTH - CODE ?</em></h4>
+                                    <div class="line-dec"></div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint voluptate voluptates, doloremque animi quae provident obcaecati. Nam veniam iusto eius facilis natus recusandae blanditiis aliquam dolorem maxime laboriosam
+                                    dolores beatae ducimus, labore non qui minima earum, pariatur dolor necessitatibus exercitationem quo hic! Quidem exercitationem ducimus laborum soluta. Sapiente, omnis.</p>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                                            <div class="progress" data-percentage="90">
+                                                <span class="progress-left">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        90%<br>
+                                                        <span>Coding</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                                            <div class="progress" data-percentage="80">
+                                                <span class="progress-left">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        80%<br>
+                                                        <span>Photoshop</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                                            <div class="progress" data-percentage="80">
+                                                <span class="progress-left">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                          <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">
+                                                    <div>
+                                                        80%<br>
+                                                        <span>Animation</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h6>Our Services</h6>
+                        <h4>What Our Agency <em>Provides</em></h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="naccs">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="menu">
+                                        <div class="first-thumb active">
+                                            <div class="thumb">
+                                                <span class="icon"><img src="/homepage/images/service-icon-01.png" alt=""></span> Apartments
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="/homepage/images/service-icon-02.png" alt=""></span> Food &amp; Life
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="/homepage/images/service-icon-03.png" alt=""></span> Cars
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <span class="icon"><img src="/homepage/images/service-icon-04.png" alt=""></span> Shopping
+                                            </div>
+                                        </div>
+                                        <div class="last-thumb">
+                                            <div class="thumb">
+                                                <span class="icon"><img src="/homepage/images/service-icon-01.png" alt=""></span> Traveling
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <ul class="nacc">
+                                        <li class="active">
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>SEO Analysis &amp; Daily Reports</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token. dover lipsum lorem and the others.
+                                                                </p>
+                                                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="/homepage/images/services-image.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Healthy Food &amp; Life</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token. dover lipsum lorem and the others.
+                                                                </p>
+                                                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="/homepage/images/services-image-02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Car Re-search &amp; Transport</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token. dover lipsum lorem and the others.
+                                                                </p>
+                                                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="/homepage/images/services-image-03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Online Shopping &amp; Tracking ID</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token. dover lipsum lorem and the others.
+                                                                </p>
+                                                                <div class="ticks-list">
+                                                                    <span>
+                                    <i class="fa fa-check"></i>
+                                    Optimized Template
+                                  </span> <span><i class="fa fa-check"></i> Data Info</span> <span><i
+                                      class="fa fa-check"></i> SEO Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="/homepage/images/services-image-04.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Enjoy &amp; Travel</h4>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token. dover lipsum lorem and the others.
+                                                                </p>
+                                                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span>
+                                                                      <i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                                                    <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 align-self-center">
+                                                            <div class="right-image">
+                                                                <img src="/homepage/images/services-image.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="free-quote" class="free-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6>Thank you for visiting our project</h6>
+                        <h4>Made and maintained by Team AUTH-CODE</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="/homepage/vendor/jquery/jquery.min.js"></script>
+    <script src="/homepage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/homepage/js/owl-carousel.js"></script>
+    <script src="/homepage/js/animation.js"></script>
+    <script src="/homepage/js/imagesloaded.js"></script>
+    <script src="/homepage/js/custom.js"></script>
 
 </body>
+
 </html>
