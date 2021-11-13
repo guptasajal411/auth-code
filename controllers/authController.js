@@ -2,8 +2,8 @@ const User = require("../models/userModel.js");
 const nodemailer = require('nodemailer');
 const otpGenerator = require('otp-generator')
 
-exports.postRegistration = function (req, res) {
-    User.findOne({ email: req.body.email }, async function (err, foundUser) {
+exports.postRegistration = function(req, res) {
+    User.findOne({ email: req.body.email }, async function(err, foundUser) {
         if (err) {
             res.send(err);
         } else {
@@ -21,8 +21,8 @@ exports.postRegistration = function (req, res) {
     });
 }
 
-exports.postLogin = function (req, res) {
-    User.findOne({ email: req.body.email }, async function (err, foundUser) {
+exports.postLogin = function(req, res) {
+    User.findOne({ email: req.body.email }, async function(err, foundUser) {
         if (err) {
             res.send(err);
         } else {
@@ -43,7 +43,7 @@ exports.postLogin = function (req, res) {
                     subject: 'Your OTP by Auth Code',
                     html: '<h1>OTP by Auth Code</h1>OTP is: ' + otpGenerator.generate(6, { upperCase: false, specialChars: false, alphabets: false, digits: true })
                 };
-                transporter.sendMail(mailOptions, function (error, info) {
+                transporter.sendMail(mailOptions, function(error, info) {
                     if (error) {
                         res.send(error);
                     } else {

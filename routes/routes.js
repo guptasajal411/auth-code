@@ -7,7 +7,6 @@ const pageController = require("../controllers/pageController");
 app
     .route("/")
     .get(pageController.getHomepage)
-    .post(authController.postRegistration);
 
 app
     .route("/registration")
