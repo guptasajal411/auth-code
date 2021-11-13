@@ -26,7 +26,9 @@ exports.postLogin = function(req, res) {
         if (err) {
             res.send(err);
         } else {
-            if (foundUser) {
+            if (foundUser == null) {
+                res.render("login", { message: "emailNotFound" });
+            } else {
                 var transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
@@ -46,11 +48,8 @@ exports.postLogin = function(req, res) {
                         res.send(error);
                     } else {
                         res.render("login", { message: "Email sent! Check your inbox for OTP" });
-
                     }
                 });
-            } else {
-                res.render("login", { message: "emailNotFound" });
             }
         }
     });
