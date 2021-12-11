@@ -18,4 +18,8 @@ app
     .get(pageController.getLogin)
     .post(authController.postLogin);
 
+app
+    .route("/otp")
+    .post(authController.postOTP);
+
 module.exports = app;

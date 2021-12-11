@@ -5,7 +5,8 @@ mongoose.connect("mongodb+srv://" + process.env.usernameMongoDB + ":" + process.
 
 const userSchema = new mongoose.Schema({
     email: String,
-    colourCombination: String
+    colourCombination: String,
+    currentOTP: Number
 });
 
 const User = new mongoose.model("User", userSchema);
