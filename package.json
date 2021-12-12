@@ -16,6 +16,7 @@
     "md5": "^2.3.0",
     "mongoose": "^6.0.11",
     "nodemailer": "^6.7.0",
+    "nodemailer-smtp-transport": "^2.7.4",
     "otp-generator": "^3.0.0"
   },
   "devDependencies": {

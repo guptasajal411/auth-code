@@ -1,6 +1,7 @@
 const User = require("../models/userModel.js");
 const nodemailer = require('nodemailer');
-const otpGenerator = require('otp-generator')
+const otpGenerator = require('otp-generator');
+var smtpTransport = require('nodemailer-smtp-transport');
 
 exports.postRegistration = function(req, res) {
     User.findOne({ email: req.body.email }, async function(err, foundUser) {
@@ -32,6 +33,7 @@ exports.postLogin = function(req, res) {
             } else {
                 var transporter = nodemailer.createTransport({
                     service: 'gmail',
+                    host: 'smtp.gmail.com',
                     auth: {
                         user: process.env.email,
                         pass: process.env.emailPassword
